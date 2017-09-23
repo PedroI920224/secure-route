@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   root to: "home#index"
+  get 'passenger', to: 'passenger#index', as: :passenger
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
